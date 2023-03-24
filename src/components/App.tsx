@@ -2,12 +2,12 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 
-import { GlobalStyles } from "./components/GlobalStyles/GlobalStyles";
-import Footer from "./components/partials/Footer";
-import Header from "./components/partials/Header";
-import CreateBlog from "./components/partials/pages/CreateBlog";
-import UserBlog from "./components/partials/pages/UserBlog";
-import Users from "./components/partials/pages/Users";
+import { GlobalStyles } from "./GlobalStyles/GlobalStyles";
+import Footer from "./partials/Footer";
+import Header from "./partials/Header";
+import CreateBlog from "./partials/pages/CreateBlog";
+import UserBlog from "./partials/pages/UserBlog";
+import Users from "./partials/pages/Users";
 
 const StyledWrapper = styled.div`
    {
@@ -20,7 +20,7 @@ const StyledWrapper = styled.div`
 
 interface IAppProps {}
 
-const App: React.FC<IAppProps> = () => (
+export const App: React.FC<IAppProps> = () => (
   <StyledWrapper>
     <GlobalStyles />
     <Header />
@@ -32,5 +32,3 @@ const App: React.FC<IAppProps> = () => (
     <Footer />
   </StyledWrapper>
 );
-
-export default App;
