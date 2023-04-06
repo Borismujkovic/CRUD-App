@@ -21,7 +21,7 @@ const Header = () => (
   <StyledHeader>
     <div id="blog">
       <Link to="/">
-        <h1>NaviPartner Test</h1>
+        <h1>CURD Application</h1>
       </Link>
     </div>
   </StyledHeader>
